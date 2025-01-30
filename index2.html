@@ -51,8 +51,18 @@
             border-radius: 50%;
             background: #744c97;
         }
+        .a_soft_pink{
+          background: #744c97;
+        }
+        header .dropdown-menu a:hover{
+          background-color: #FFB900;
+        }
         .a_userlink{
             color: #e8c8ed;
+        }
+        .a_header_nav > li > a:hover{
+          background: #573a70;
+            color: #ffb900 !important;
         }
 
         .a_header_nav > li:last-child > a{
@@ -69,6 +79,19 @@
         .a_panel{
           height: 220px;
           background: #424d83;
+        }
+
+        .a_panel1, .a_panel3{
+          background-image: url("img/cloud.png"), url("img/cloud.png"), url("img/cloud.png");
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-position: 50% 15%, 75% 10%, 85% 20%;
+          background-size: 30px 20px, 25px 15px, 15px 10px;
+        }
+        .a_panel2, .a_panel4{
+          background-image: url("img/new.png"), url("img/new.png"), url("img/new.png");
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-position: 50% 15%, 75% 10%, 85% 20%;
+          background-size: 30px 20px, 25px 15px, 15px 10px;
         }
 
         .a_panel:hover{
@@ -130,15 +153,15 @@
                   <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle a_userlink" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle a_userlink" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="d-inline-block a_circle "></span>
                     <span class="position-relative" style="top:-13px;">Nidhi Bokadiya <i class="fas fa-chevron-down"></i></span>
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu a_soft_pink" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider text-white"></li>
+                    <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
                   </ul>
                 </li>
               </ul>
@@ -156,45 +179,45 @@
            <div class="row m-0">
              <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <div class="a_panel a_panel1 rounded rounded-3 p-3">
-                   <img src="img/launch-1.svg" alt="">
+                   <img class="mb-2" src="img/launch-1.svg" alt="">
                    <h4 class="mb-4">InnovEx Decision Hub</h4>
                    <div class="a_panel1_c1 d-none">
                      <img class="img-fluid" src="img/e1.png" alt="">
                    </div>
-                   <a class="float-end text-white mt-3" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                   <a class="float-end text-white mt-2" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
                 </div>
              </div>
 
              <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <div class="a_panel a_panel2 rounded rounded-3 p-3">
-                   <img src="img/layout (1)-1.svg" alt="">
-                   <h4>MarketPlace Vistas & Decision Hub(MVDH)</h4>
+                   <img class="mb-2" src="img/layout (1)-1.svg" alt="">
+                   <h4 class="mb-3">MarketPlace Vistas & Decision Hub(MVDH)</h4>
                    <div class="a_panel1_c1 d-none">
                     <img class="img-fluid" src="img/e2.png" alt="">
                   </div>
-                  <a class="float-end text-white mt-3" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                  <a class="float-end text-white mt-0" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
                 </div>
              </div>
 
              <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <div class="a_panel a_panel3 rounded rounded-3 p-3">
-                  <img src="img/launch.svg" alt="">
-                  <h4>SustainX Decision Hub</h4>
+                  <img class="mb-2" src="img/launch.svg" alt="">
+                  <h4 class="mb-4">SustainX Decision Hub</h4>
                   <div class="a_panel1_c1 d-none">
                    <img class="img-fluid" src="img/e3.png" alt="">
                  </div>
-                 <a class="float-end text-white mt-3" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                 <a class="float-end text-white mt-2" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
                 </div>
              </div>
 
              <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <div class="a_panel a_panel4 rounded rounded-3 p-3">
-                  <img src="img/layout (1)-1.svg" alt="">
-                  <h4>Agile ResearchOps & Knowledge Hub(ARKH)</h4>
+                  <img class="mb-2" src="img/layout (1)-1.svg" alt="">
+                  <h4 class="mb-2">Agile ResearchOps & Knowledge Hub(ARKH)</h4>
                   <div class="a_panel1_c1 d-none">
                    <img class="img-fluid" src="img/e4.png" alt="">
                  </div>
-                 <a class="float-end text-white mt-3" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                 <a class="float-end text-white mt-1" href="#">Learn More <i class="fa-solid fa-chevron-right ms-1"></i></a>
                 </div>
              </div>
 
@@ -269,7 +292,18 @@
     </div>
 
 
-
+   <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script>
+       (function($){
+        $('.a_header_nav > li > a').click(function(){
+          $('.active').removeClass('active').addClass('text-white');
+          $(this).addClass('active');
+        });
+       })(jQuery);
+    </script>
+  </body>
 </html>
